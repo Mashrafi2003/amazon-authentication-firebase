@@ -37,4 +37,8 @@ Step - 4
     4.Create useAuth hook
     5.Set Context value
 
+Step 5(Create Private route)
+    1.Create A Private Route
+    2.Set Private Route
+
 */

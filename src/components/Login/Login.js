@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link  , useLocation} from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 // import useFirebase from '../../hooks/useFirebase';
 import './Login.css'
@@ -7,6 +7,8 @@ import './Login.css'
 const Login = () => {
     // const {user , signinUsingGoogle} =useFirebase();
     const {signinUsingGoogle} = useAuth()
+    const location = useLocation()
+    console.log(location.state?.from)
     return (
         <div className='login-form'>
             <div>
